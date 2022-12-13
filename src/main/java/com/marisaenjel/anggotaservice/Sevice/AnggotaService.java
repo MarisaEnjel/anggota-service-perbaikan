@@ -18,7 +18,7 @@ public class AnggotaService {
     @Autowired
     private AnggotaRepository anggotaRepository;
     
-    public Anggota saveAnggota(Anggota anggota) {
+    public Anggota saveAnggota(Anggota anggota){
         return anggotaRepository.save(anggota);
     }
     

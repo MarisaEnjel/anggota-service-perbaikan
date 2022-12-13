@@ -18,12 +18,13 @@ import lombok.NoArgsConstructor;
  */
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
+
 public class Anggota {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long anggotaId;
-    private String anggotaName;
-    private String anggotaAddress;
+    private String nama;
+    private String alamat;
 }

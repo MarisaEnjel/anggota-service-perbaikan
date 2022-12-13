@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/anggota")
 public class AnggotaController {
-  @Autowired
+    @Autowired
     private AnggotaService anggotaService;
     
     @PostMapping("/")
@@ -32,5 +32,5 @@ public class AnggotaController {
     @GetMapping("/{id}")
     public Anggota findAnggotaById(@PathVariable("id") Long anggotaId){
         return anggotaService.findAnggotaById(anggotaId);
-    }  
+    }
 }

@@ -13,8 +13,7 @@ import org.springframework.stereotype.Repository;
  * @author acer
  */
 @Repository
-public interface AnggotaRepository extends JpaRepository<Anggota, Long>{
-
-    public Anggota findByAnggotaId(Long anggotaId);
+public interface AnggotaRepository extends JpaRepository<Anggota, Long> {
     
+    public Anggota findByAnggotaId(Long anggotaId);
 }
